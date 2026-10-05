@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with | Gallery</title>
+    
+    <!-- Google Fonts for Gloock -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <!-- Persistent Navbar -->
+    <nav class="navbar">
+        <ul>
+            <div class="nav-indicator"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>    
+    </nav>
+
+    <!-- Main Gallery Container -->
+    <main class="gallery-container">
+        <!-- Header Title -->
+        <header class="gallery-header">
+            <h1 class="gallery-hero-title">Visual <em>Archives.</em></h1>
+            <p class="gallery-subtitle">Just random photos and videos xD.</p>
+        </header>
+
+        <!-- Glassmorphic Image Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-card" data-src="pictures/gallery1.jpg">
+                <div class="gallery-image-wrapper">
+                    <img src="pictures/gallery1.jpg" alt="Gallery Image 1" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="view-tag">Expand View</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-src="pictures/gallery2.jpg">
+                <div class="gallery-image-wrapper">
+                    <img src="pictures/gallery2.jpg" alt="Gallery Image 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="view-tag">Expand View</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-src="pictures/gallery3.jpg">
+                <div class="gallery-image-wrapper">
+                    <img src="pictures/gallery3.jpg" alt="Gallery Image 3" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="view-tag">Expand View</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-src="pictures/gallery4.jpg">
+                <div class="gallery-image-wrapper">
+                    <img src="pictures/gallery4.jpg" alt="Gallery Image 4" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="view-tag">Expand View</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Card -->
+
+            <div class="gallery-card" data-type="video" data-src="pictures/[EDIT] Raiden - MoonDeity Wake up.mp4">
+                <div class="gallery-image-wrapper">
+                    <video class="gallery-media" muted loop autoplay playsinline>
+                        <source src="pictures/[EDIT] Raiden - MoonDeity Wake up.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-overlay">
+                        <span class="view-tag">▶ Play Video</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-card" data-type="video" data-src="pictures/Rick turns himself into a leg.mp4">
+                <div class="gallery-image-wrapper">
+                    <video class="gallery-media" muted loop autoplay playsinline>
+                        <source src="pictures/Rick turns himself into a leg.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-overlay">
+                        <span class="view-tag">▶ Play Video</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Glass Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <div class="lightbox-content" id="lightboxContent">
+            <!-- JavaScript dynamically injects images/videos here -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

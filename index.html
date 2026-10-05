@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with | Home</title>
+    <!-- Google Fonts for Gloock -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <nav class="navbar">
+        <ul>
+            <div class="nav-indicator"></div>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="hero-container">
+        <div class="hero-card">
+            <!-- macOS Window Header Bar -->
+            <div class="window-header">
+                <div class="window-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="window-plus">+</div>
+            </div>
+            <div class="hero-card-body">
+                <!-- Left Column: Photo Frame + Name Below -->
+                <div class="profile-column">
+                    <div class="profile-rect-wrapper">
+                        <img src="pictures/formal_picture.png" alt="Formal Picture" class="profile-img-rect">
+                    </div>
+                    <h2 class="profile-name">Raviel Alano</h2>
+                </div>
+
+                <!-- Right Column: Bio Content -->
+                <div class="hero-content-right">
+                    <div class="bio-content">
+                        <h1 class="hero-title">Creative Developer</h1>
+                        <p class="hero-subtitle">Junior Penetration Tester · C++ Developer · UI/UX & Graphic Designer</p>
+                        <p class="hero-bio">
+                            Bridging the gap between low-level performance, offensive security, and human-centric
+                            design. I engineer fast C++ systems, uncover vulnerabilities through penetration testing,
+                            and craft sleek, high-fidelity interfaces that turn complex backend architecture into
+                            effortless user experiences.
+                        </p>
+                    </div>
+                    <!-- Right-Justified Buttons -->
+                    <div class="cta-group">
+                        <a href="portfolio.html" class="btn btn-primary">Portfolio</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

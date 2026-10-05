@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with | Portfolio</title>
+    <!-- Google Fonts for Gloock -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <!-- Primary Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <!-- Persistent Navbar -->
+    <nav class="navbar">
+        <ul>
+            <div class="nav-indicator"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portfolio Main Section -->
+    <main class="portfolio-container">
+        <header class="portfolio-header">
+            <h1 class="portfolio-hero-title">Selected <em>Works.</em></h1>
+            <p class="portfolio-subtitle">Data structures, web utilities, academic applications, and event graphics.</p>
+        </header>
+
+        <!-- SECTION 1: Software Projects Grid -->
+        <div class="portfolio-grid">
+
+            <!-- CARD 1: DNS AVL Tree -->
+            <div class="portfolio-card-container">
+                <div class="portfolio-card">
+                    <!-- FRONT SIDE -->
+                    <div class="card-side card-front">
+                        <div class="card-media-wrapper">
+                            <img src="pictures/dns-avl-tree.png" alt="DNS AVL Tree Preview" class="card-img">
+                            <span class="category-badge">Data Structures</span>
+                        </div>
+                        <div class="card-front-content">
+                            <div class="front-title-group">
+                                <h2 class="project-title">DNS AVL Tree Visualizer</h2>
+                                <p class="project-sub">Alphabetical DNS sorting & node tracking</p>
+                            </div>
+                            <button class="flip-btn" aria-label="Flip Card for details">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 1l4 4-4 4" />
+                                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                                    <path d="M7 23l-4-4 4-4" />
+                                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="card-side card-back">
+                        <div class="card-back-header">
+                            <h2 class="project-title-back">DNS AVL Tree</h2>
+                            <span class="status-tag">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Interactive web platform that accepts user-entered websites, resolves their IP addresses,
+                            and dynamically balances them in an alphabetical AVL tree. Querying an existing site
+                            traverses and highlights its specific tree node in real time.
+                        </p>
+                        <div class="tech-stack-group">
+                            <span class="glass-pill">AVL Tree</span>
+                            <span class="glass-pill">DNS Resolution</span>
+                            <span class="glass-pill">JavaScript</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://dns-bst-project.onrender.com/" target="_blank" rel="noopener noreferrer"
+                                class="card-link">View Website ↗</a>
+                            <button class="flip-btn flip-back-btn">
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: Live Character Checker -->
+            <div class="portfolio-card-container">
+                <div class="portfolio-card">
+                    <!-- FRONT SIDE -->
+                    <div class="card-side card-front">
+                        <div class="card-media-wrapper">
+                            <img src="pictures/live-character-checker.png" alt="Live Character Checker Preview"
+                                class="card-img">
+                            <span class="category-badge">Web Utility</span>
+                        </div>
+                        <div class="card-front-content">
+                            <div class="front-title-group">
+                                <h2 class="project-title">Live Character Checker</h2>
+                                <p class="project-sub">Real-time string analytics utility</p>
+                            </div>
+                            <button class="flip-btn" aria-label="Flip Card for details">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 1l4 4-4 4" />
+                                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                                    <path d="M7 23l-4-4 4-4" />
+                                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="card-side card-back">
+                        <div class="card-back-header">
+                            <h2 class="project-title-back">Character Counter</h2>
+                            <span class="status-tag">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Responsive front-end tool providing instant feedback on text inputs. Measures character
+                            counts, word density, and remaining buffer limits in real time as the user types.
+                        </p>
+                        <div class="tech-stack-group">
+                            <span class="glass-pill">JavaScript</span>
+                            <span class="glass-pill">DOM Manipulation</span>
+                            <span class="glass-pill">CSS3</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="card-link">View Demo ↗</a>
+                            <button class="flip-btn flip-back-btn">
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Student Information Activity -->
+            <div class="portfolio-card-container">
+                <div class="portfolio-card">
+                    <!-- FRONT SIDE -->
+                    <div class="card-side card-front">
+                        <div class="card-media-wrapper">
+                            <img src="pictures/student-information-activity.png"
+                                alt="Student Information Activity Preview" class="card-img">
+                            <span class="category-badge">Academic App</span>
+                        </div>
+                        <div class="card-front-content">
+                            <div class="front-title-group">
+                                <h2 class="project-title">Student Info Portal</h2>
+                                <p class="project-sub">Academic records management system</p>
+                            </div>
+                            <button class="flip-btn" aria-label="Flip Card for details">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 1l4 4-4 4" />
+                                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                                    <path d="M7 23l-4-4 4-4" />
+                                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="card-side card-back">
+                        <div class="card-back-header">
+                            <h2 class="project-title-back">Student Records</h2>
+                            <span class="status-tag">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Data management application designed for registering, organizing, and displaying student
+                            records with strict input validation and field handling.
+                        </p>
+                        <div class="tech-stack-group">
+                            <span class="glass-pill">PHP</span>
+                            <span class="glass-pill">HTML5/CSS3</span>
+                            <span class="glass-pill">Data Management</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="card-link">View Source ↗</a>
+                            <button class="flip-btn flip-back-btn">
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4: Attendance Checker -->
+            <div class="portfolio-card-container">
+                <div class="portfolio-card">
+                    <!-- FRONT SIDE -->
+                    <div class="card-side card-front">
+                        <div class="card-media-wrapper">
+                            <img src="pictures/attendance-checker-with-time.png" alt="Attendance Checker Preview"
+                                class="card-img">
+                            <span class="category-badge">Web Application</span>
+                        </div>
+                        <div class="card-front-content">
+                            <div class="front-title-group">
+                                <h2 class="project-title">Loop Attendance Tracker</h2>
+                                <p class="project-sub">Timestamped queue logger</p>
+                            </div>
+                            <button class="flip-btn" aria-label="Flip Card for details">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 1l4 4-4 4" />
+                                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                                    <path d="M7 23l-4-4 4-4" />
+                                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="card-side card-back">
+                        <div class="card-back-header">
+                            <h2 class="project-title-back">Attendance Checker</h2>
+                            <span class="status-tag">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Event check-in tool that dynamically registers student entries, captures precise arrival
+                            timestamps, and outputs formatted attendance logs in an active loop.
+                        </p>
+                        <div class="tech-stack-group">
+                            <span class="glass-pill">JavaScript</span>
+                            <span class="glass-pill">Loops & Arrays</span>
+                            <span class="glass-pill">Event Logging</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="card-link">View Source ↗</a>
+                            <button class="flip-btn flip-back-btn">
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECTION 2: Graphic Designs & Pubmats -->
+        <header class="portfolio-header" style="margin-top: 4rem;">
+            <h1 class="portfolio-hero-title">Graphic Design & <em>Pubmats.</em></h1>
+            <p class="portfolio-subtitle">Visual materials and publication banners crafted for academic events and
+                workshops.</p>
+        </header>
+
+        <div class="portfolio-grid">
+
+            <!-- PUBMAT 1: CodeTuto -->
+            <div class="portfolio-card-container">
+                <div class="portfolio-card">
+                    <!-- FRONT SIDE -->
+                    <div class="card-side card-front">
+                        <div class="card-media-wrapper">
+                            <img src="pictures/CodeTuto.jpeg" alt="CodeTuto Event Pubmat" class="card-img">
+                            <span class="category-badge">Publication Design</span>
+                        </div>
+                        <div class="card-front-content">
+                            <div class="front-title-group">
+                                <h2 class="project-title">CodeTuto</h2>
+                                <p class="project-sub">1st Year Peer Review Campaign</p>
+                            </div>
+                            <button class="flip-btn" aria-label="Flip Card for details">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 1l4 4-4 4" />
+                                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                                    <path d="M7 23l-4-4 4-4" />
+                                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="card-side card-back">
+                        <div class="card-back-header">
+                            <h2 class="project-title-back">CodeTuto Event</h2>
+                            <span class="status-tag">Event Design</span>
+                        </div>
+                        <p class="project-description">
+                            Promotional graphics designed for an academic review initiative aimed at helping 1st-year
+                            computer science students master core programming logic, syntax, and problem-solving
+                            techniques.
+                        </p>
+                        <div class="tech-stack-group">
+                            <span class="glass-pill">Canva</span>
+                            <span class="glass-pill">Branding</span>
+                            <span class="glass-pill">Layout Design</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://www.facebook.com/share/p/1DfSnMgdEW/" target="_blank"
+                                rel="noopener noreferrer" class="card-link">View Design ↗</a>
+                            <button class="flip-btn flip-back-btn">
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PUBMAT 2: AlgoRhythm -->
+            <div class="portfolio-card-container">
+                <div class="portfolio-card">
+                    <!-- FRONT SIDE -->
+                    <div class="card-side card-front">
+                        <div class="card-media-wrapper">
+                            <img src="pictures/Algo.jpeg" alt="AlgoRhythm Event Pubmat" class="card-img">
+                            <span class="category-badge">Publication Design</span>
+                        </div>
+                        <div class="card-front-content">
+                            <div class="front-title-group">
+                                <h2 class="project-title">AlgoRhythm</h2>
+                                <p class="project-sub">Algorithm Workshop & Thesis Prep</p>
+                            </div>
+                            <button class="flip-btn" aria-label="Flip Card for details">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 1l4 4-4 4" />
+                                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                                    <path d="M7 23l-4-4 4-4" />
+                                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="card-side card-back">
+                        <div class="card-back-header">
+                            <h2 class="project-title-back">AlgoRhythm</h2>
+                            <span class="status-tag">Event Design</span>
+                        </div>
+                        <p class="project-description">
+                            High-impact visual branding for an algorithmic workshop. Designed to introduce 2nd-year
+                            students to fundamental algorithms while equipping 3rd-year students with key algorithmic
+                            justifications for upcoming thesis defenses.
+                        </p>
+                        <div class="tech-stack-group">
+                            <span class="glass-pill">Graphic Design</span>
+                            <span class="glass-pill">Typography</span>
+                            <span class="glass-pill">Visual Branding</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://www.facebook.com/share/p/1GpeNXTRpp/" target="_blank"
+                                rel="noopener noreferrer" class="card-link">View Design ↗</a>
+                            <button class="flip-btn flip-back-btn">
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

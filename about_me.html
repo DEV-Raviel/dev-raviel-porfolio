@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with | About Me</title>
+    
+    <!-- Google Fonts for Gloock -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <!-- Persistent Navbar -->
+    <nav class="navbar">
+        <ul>
+            <div class="nav-indicator"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html" class="active">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>    
+    </nav>
+
+    <!-- About Main Container -->
+    <main class="about-container">
+    
+    <!-- Hero Editorial Headline -->
+    <header class="about-header">
+        <h1 class="about-hero-title">
+            Driven by relentless curiosity, grounded in code, and <em>shaped by design.</em>
+        </h1>
+    </header>
+
+    <!-- Staggered Editorial Story Grid -->
+    <div class="about-grid">
+        
+        <!-- LEFT COLUMN: Security & Systems Journey -->
+        <div class="about-col col-left">
+            <!-- Main Portrait Card -->
+            <div class="about-photo-wrapper">
+                <img src="pictures/picture1.jpg" alt="Profile Portrait" class="about-photo">
+            </div>
+
+            <!-- Story Block 1: Security Journey -->
+            <div class="about-story-card">
+                <h2 class="story-title">Curiosity & The Hacker Mindset</h2>
+                <p class="story-text">
+                    My fascination with cybersecurity started young with a simple, ambitious goal: trying to crack a neighbor's Wi-Fi network. Armed with nothing but an Android phone and endless internet searches, that early curiosity transformed me into an obsessive tech tinkerer.
+                </p>
+                <p class="story-text">
+                    In high school, structured security resources were scarce, making ethical hacking feel like an impossible discipline. But in college, studying networking protocols and communications laid down the exact mathematical and architectural fundamentals I needed—reigniting my passion into penetration testing and offensive security.
+                </p>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Design & Visual Journey -->
+        <div class="about-col col-right">
+            <!-- Teaser Subtitle -->
+            <div class="about-intro-box">
+                <p class="intro-headline">This is my story — from Android tinkering and Photoshop experiments to C++ engineering and UI/UX design.</p>
+            </div>
+
+            <!-- Secondary Work/Lifestyle Photo -->
+            <div class="about-photo-wrapper">
+                <img src="pictures/picture2.jpg" alt="Workspace / Secondary Photo" class="about-photo">
+            </div>
+
+            <!-- Story Block 2: Design Journey -->
+            <div class="about-story-card">
+                <h2 class="story-title">From Photoshop as a hobby to UI/UX</h2>
+                <p class="story-text">
+                    Parallel to my technical deep dives, high school was where my visual creative journey began. Driven by a desire to master Photoshop, I spent hours experimenting with graphic composition, lighting effects, and visual layouts.
+                </p>
+                <p class="story-text">
+                    Over time, that visual discipline expanded into CSS graphic design and interface design. Crafting this personal website became the turning point where my background in penetration testing, C++ performance, and UI/UX styling merged into one cohesive craft.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <script src="index.js"></script>
+</body>
+</html>
